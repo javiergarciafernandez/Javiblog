@@ -1,4 +1,4 @@
-/* Reseteo de márgenes y padding para un mejor control del diseño */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ body {
     background: #8fe5e2;
 }
 
-/* Estilo del título */
+
 .titulo {
     font-family: 'Pacifico', cursive;
     font-size: 6rem;
@@ -37,7 +37,7 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
-/* Efecto de brillo sutil */
+
 .titulo::after {
     content: "";
     position: absolute;
@@ -49,21 +49,21 @@ body {
     animation: brillo 1.5s infinite linear;
 }
 
-/* Animación de brillo */
+
 @keyframes brillo {
     0% { left: -100%; }
     50% { left: 100%; }
     100% { left: -100%; }
 }
 
-/* Efecto al pasar el ratón sobre el título */
+
 .titulo:hover {
     transform: scale(1.1) rotate(3deg);
     color: #f9d423;
     text-shadow: 0 10px 30px rgba(255, 255, 255, 0.5);
 }
 
-/* Animación de aparición */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -107,7 +107,7 @@ body {
         
     }
     .columna {
-        flex: 1; /* Las columnas ocuparán el mismo espacio */
+        flex: 1; 
         padding: 20px;
         border: 3px solid #ffb702;
        
@@ -117,14 +117,14 @@ body {
         margin-left:10%;
     }
     
-    /* Reset básico */
+   
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fondo de la página */
+
 .conteiner3 {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #f3f4f6, #e6e9f0);
@@ -135,7 +135,7 @@ body {
     padding: 20px;
 }
 
-/* Contenedor del formulario */
+
 .form-container {
     background-color: #ffffff;
     padding: 40px;
@@ -156,7 +156,7 @@ body {
     transform: translateY(-10px);
 }
 
-/* Título */
+
 h1 {
     font-size: 28px;
     color: #4CAF50;
@@ -164,14 +164,14 @@ h1 {
     font-weight: bold;
 }
 
-/* Estilo de los grupos de campos */
+
 .form-group {
     margin-bottom: 28px;
     text-align: left;
     position: relative;
 }
 
-/* Etiquetas */
+
 label {
     display: block;
     font-size: 16px;
@@ -179,7 +179,7 @@ label {
     margin-bottom: 8px;
 }
 
-/* Estilo de los inputs, selects y textareas (Neumorfismo) */
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -206,17 +206,17 @@ select:focus {
     outline: none;
 }
 
-/* Estilo de los textareas */
+
 textarea {
     resize: vertical;
 }
 
-/* Estilo de los checkbox */
+
 input[type="checkbox"] {
     margin-right: 10px;
 }
 
-/* Botón de envío */
+
 .submit-btn {
     background-color: #4CAF50;
     color: white;
@@ -239,17 +239,17 @@ input[type="checkbox"] {
     transform: scale(0.98);
 }
 
-/* Efecto de hover en el formulario */
+
 .form-container:hover .submit-btn {
     background-color: #388e3c;
 }
 
-/* Estilo para los términos */
+
 input[type="checkbox"]:checked + label {
     color: #4CAF50;
 }
 
-/* Validación de los campos: si el campo está vacío, marcarlo con borde rojo */
+
 input:invalid,
 textarea:invalid,
 select:invalid {
@@ -262,7 +262,7 @@ select:valid {
     border: 2px solid #4CAF50;
 }
 
-/* Último grupo sin margen inferior */
+
 .form-group:last-child {
     margin-bottom: 0;
 }
